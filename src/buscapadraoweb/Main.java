@@ -52,10 +52,10 @@ public class Main {
     public static void main(String[] args) {
         //instancia e usa objeto que captura código-fonte de páginas Web
         CapturaRecursosWeb crw = new CapturaRecursosWeb();
-        crw.getListaRecursos().add("https://relogioonline.com.br/horario/");
+        crw.getListaRecursos().add("https://dayspedia.com/time/online/?lang=pt");
         ArrayList<String> listaCodigos = crw.carregarRecursos();
 
-        String codigoHTML = listaCodigos.get(0);
+        String codigoHTML = "21:01 " ;//listaCodigos.get(0);
 
         //mapa do alfabeto
         char[] alfabeto = new char[11];
